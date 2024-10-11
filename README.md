@@ -1,12 +1,22 @@
-# 사내 슬랙에서 이모지 TOP 30 추출하기
+## 사내 슬랙 채널 분석
 
-기존 소스 코드에서 api 요청 및 변수 선언이 잘못된 부분이 있어 새로 수정한 소스코드입니다.
+### get_emoji-count.py
 
+사내 슬랙 퍼블릭 채널 조회
+
+- 가장 많이 사용된 이모지 TOP 30
+
+> 기존 소스 코드에서 에러가 발생하는 부분을 새로 수정한 소스코드입니다.
 > 이전 코드 출처: https://qiita.com/leechungkyu/items/e822d8836b465a334fc9
 
-### 이용 방법
+### get_ranking.py
 
-1. python3 설치
-2. requests, python-dotenv 모듈 설치
-3. slack에서 발급받은 token을 .env에 저장
-4. python3 get_emoji_count.py 실행
+사내 슬랙의 특정 ID 채널 조회
+
+1. 가장 많은 게시글 수 TOP 10
+2. 가장 많은 이모지를 단 사람 TOP 10
+3. 가장 많이 사용된 이모지 TOP 10
+
+## 이용 방법
+
+필요한 토큰을 발급받아 .env파일에 추가한 후 코드를 실행합니다.
